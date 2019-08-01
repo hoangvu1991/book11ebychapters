@@ -161,8 +161,8 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     }
   }
   
-  @Override /** Obtain a DFS tree starting from vertex v */
-  /** To be discussed in Section 28.6 */
+/*  @Override *//** Obtain a DFS tree starting from vertex v *//*
+  *//** To be discussed in Section 28.6 *//*
   public Tree dfs(int v) {
     List<Integer> searchOrder = new ArrayList<>();
     int[] parent = new int[vertices.size()];
@@ -177,7 +177,7 @@ public abstract class AbstractGraph<V> implements Graph<V> {
 
     // Return a search tree
     return new Tree(v, parent, searchOrder);
-  }
+  }*/
 
   /** Recursive method for DFS search */
   private void dfs(int u, int[] parent, List<Integer> searchOrder,
@@ -194,8 +194,8 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     }
   }
 
-  @Override /** Starting bfs search from vertex v */
-  /** To be discussed in Section 28.7 */
+/*  @Override *//** Starting bfs search from vertex v *//*
+  *//** To be discussed in Section 28.7 *//*
   public Tree bfs(int v) {
     List<Integer> searchOrder = new ArrayList<>();
     int[] parent = new int[vertices.size()];
@@ -221,7 +221,7 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     }
 
     return new Tree(v, parent, searchOrder);
-  }
+  }*/
 
   /** Tree inner class inside the AbstractGraph class */
   /** To be discussed in Section 28.5 */

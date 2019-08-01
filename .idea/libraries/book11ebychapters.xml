@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="book11ebychapters">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/book11ebychapters.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

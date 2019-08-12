@@ -1,5 +1,7 @@
 package chapter24;
 
+import java.util.PriorityQueue;
+
 public class TestPriorityQueue {
   public static void main(String[] args) {
     Patient patient1 = new Patient("John", 2);
@@ -16,6 +18,16 @@ public class TestPriorityQueue {
     
     while (priorityQueue.getSize() > 0) 
       System.out.print(priorityQueue.dequeue() + " ");
+
+    System.out.println();
+
+    PriorityQueue<Patient> priorityQueue2 = new PriorityQueue<>();
+    priorityQueue2.offer(patient1);
+    priorityQueue2.offer(patient2);
+    priorityQueue2.offer(patient3);
+    priorityQueue2.offer(patient4);
+    while (priorityQueue2.size() > 0)
+      System.out.print(priorityQueue2.remove() + " ");
   }
   
   static class Patient implements Comparable<Patient> {
